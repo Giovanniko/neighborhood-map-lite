@@ -1,0 +1,171 @@
+@import url(http://weloveiconfonts.com/api/?family=openwebicons);
+
+/* openwebicons */
+[class*="openwebicons-"]:before {
+	font-family: 'OpenWeb Icons', sans-serif;
+	margin: 5px 10px;
+	
+}
+
+body {
+	font-family: "Palatino Linotype", Arial,
+		sans-serif, serif;
+	font-size: 12px;
+}
+
+/* HEADER */
+.head {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	max-height: 95px;
+}
+
+.headertitle {
+	background-image: url("../img/Oviedo_mountains_wide.png");/* photo by Jonathan Koefman */
+	background-repeat: no-repeat;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+h1 {
+	font-size: 2.0em;
+	text-align: center;
+	margin: 10px;
+}
+
+.coatofarmsOviedo,
+.coatofarmsPrincipesa{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-grow: 1;
+	padding: 5px;
+	max-width: 100px;
+	min-height: 75px;
+	max-height: 94px;
+}
+
+/*INPUT AREA*/
+.input {
+	display: flex;
+	justify-content: space-between;
+}
+.searchLabel {
+	font-size: 1.5em;
+	margin: 3px;
+}
+
+.list-icon{
+	cursor: pointer;
+	font-size: 2em;
+}
+
+.searchText {
+	max-width: 80%;
+	min-width: 50%;
+	margin: 4px;
+}
+
+/* RESULTS AREA */
+
+hr {
+margin: 4px 0px;
+}
+
+.map-canvas {
+  cursor: pointer;
+  margin: 3px;
+  bottom:0px;
+  height: 600px;
+ }
+
+/*LINKS*/
+a:link {
+	color: blue;
+}
+
+a:hover {
+	color: #c3f;
+	font-weight: bold;
+}
+
+a:visited {
+	color: #909;
+}
+
+/*LIST AREA*/
+.resultsList {
+	margin-right: 0px;
+}
+
+div.infoArea {
+	max-width: 160px;
+}
+
+ul li {
+	cursor:pointer;
+	background-color: ghostwhite;
+	margin-right: 5px;
+	list-style-image: url("../img/favorites_16x16.png");
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+	/*Favorites icons from http://www.softicons.com/toolbar-icons/toolbar-icons-by-gentleface/favorites-icon*/
+}
+
+li:hover {
+	color: blue;
+	text-shadow: 2px 2px 5px #999;
+}
+
+/*RESPONSIVE AREA*/
+@media only screen and (min-width: 550px) {
+
+	.title {
+		font-size: 2.5em;
+	}
+	
+	.principesa {
+		padding-left: 30px;
+	}
+	
+	.searchLabel {
+		margin: 5px 25px;
+		font-size: 2.0em;
+	}
+	
+	.list-icon {
+		margin: 5px 15px;
+	}
+	
+	.results {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		justify-content: space-around;
+		max-height: 90vh;
+	}
+	
+	.column1 {
+		flex-shrink: 1;
+		overflow: scroll;
+	}
+	
+	.resultsList {
+		margin: 5px;	
+	}
+	
+	.togo{
+		display: none;
+	}
+	
+	.column2 {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		flex-shrink: 1;
+		padding: 10px;
+	}
+} 
+
